@@ -3,6 +3,7 @@
 #
 
 setwd("H:\\Datascientist\\04-ExData\\CourseProject1")
+
 energyall <- read.csv("household_power_consumption.txt", sep=";", na.strings="?")
 energyall <- transform(energyall, Date = as.Date(Date,format="%d/%m/%Y"))
 
